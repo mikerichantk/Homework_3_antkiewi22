@@ -1,0 +1,113 @@
+<!-- Mikey Antkiewicz : HW 2 -->
+
+<!DOCTYPE html>
+<html lang="en-US">
+<html>
+<head>
+<title>Homework 2 antkiewi22</title>
+<link rel="stylesheet" type="text/css" href="stylesheet/hw2.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"/>
+</script>
+<script src="javascripts/hide.js"></script>
+
+<!-- check to see if they input vegan -->
+<script src="javascripts/myFunc.js"></script>
+
+</head>
+<body>
+
+<!-- main heading -->
+<h1>Cheesecake Order Form</h1>
+
+<!-- picture of cheesecake -->
+<img src="cake.jpg" alt="Cheesecake" width="150" height="200">
+
+<!-- text under picture -->
+<p>Quantity Topping</p>
+
+<!-- format drop down & options -->
+<table id="table" style="width:15%">
+  <tr>
+
+    <!-- drop down -->
+    <td class="select">
+    </td>
+    <td ALIGN="left">
+    <select id="quantity" name="toppings">
+	    <option name="quantity"> 1 </option>
+	    <option name="quantity"> 2 </option>
+        <!-- make this selected initailly -->
+	    <option name="quantity"selected> 3 </option>
+      <option name="quantity"> 4 </option>
+      <option name="quantity"> 5 </option>
+    </select>
+    </td>
+
+    <!-- toppings -->
+    <td class="radio">
+    </td>
+    <td ALIGN="left">
+    <!-- make this selected initailly -->
+    <input type="radio" name="dot"checked value="Plain">Plain<br>
+    <input type="radio" name="dot" value="Cherry">Cherry<br>
+    <input type="radio" name="dot" value="Chocolate">Chocolate<br>
+    </td>
+  
+  </tr>
+</table>
+
+<!-- notes header -->
+<p>Notes:</p>
+
+<!-- note pad -->
+<textarea id="text" rows="4" cols="50" placeholder="Enter any special instruction here.">
+</textarea>
+
+<!-- line break -->
+<br>
+
+<!-- button -->
+<button id="button" onclick="myFunction()">Order</button> 
+
+<!-- line break -->
+<br>
+
+<!-- messages to customer -->
+<h2 id="ty">Thank you! Your order has been placed.</h2>
+
+<!-- instruction message -->
+<h4 id="inst"></h4>
+
+<!-- heading for list -->
+<div class="dropdown">
+  <h3>Orders for
+  <button class="dropbtn">Jan</button>
+  <div class="dropdown-content">
+    <a href="#">Jan</a>
+    <a href="#">Feb</a>
+    <a href="#">Mar</a>
+    <a href="#">Apr</a>
+    <a href="#">May</a>
+    <a href="#">Jun</a>
+    <a href="#">Jul</a>
+    <a href="#">Aug</a>
+    <a href="#">Sep</a>
+    <a href="#">Oct</a>
+    <a href="#">Nov</a>
+    <a href="#">Dec</a>
+  </div>
+</div> </h3>
+
+<!-- list -->
+<ul>
+  <li>11 cherry</li>
+  <li>17 chocolate</li>
+  <li>31 plain</li>
+</ul>
+
+
+</body>
+</html> 
+
+<!-- add functionality to my dropdown -->
+<script src="javascripts/myFunc.js"></script>
