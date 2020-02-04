@@ -1,3 +1,4 @@
+// Mikey Antkiewicz : HW 3
 // jQuery
 $(document).ready(function(){
   // hide messages

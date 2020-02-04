@@ -1,3 +1,4 @@
+// Mikey Antkiewicz : HW 3
 function myFunction() {
     // variable for thank you message
     var thanks = document.getElementById("ty");
